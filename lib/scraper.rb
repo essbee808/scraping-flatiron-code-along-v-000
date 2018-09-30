@@ -25,10 +25,6 @@ class Scraper
     def get_courses
       #=> use CSS selector to grab all of the HTML elements that contain a course
       all_HTML = self.get_page
-        all_HTML.css("article").select do |el|
-        binding.pry
-        end
-        return all_HTML.css(".post.same")
       return all_HTML.css(".post")
     end
     
