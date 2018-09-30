@@ -37,7 +37,6 @@ class Scraper
         course.schedule = noko_course.css(".date").text
         course.description = noko_course.css("p").text
       end 
-      
     end
   
 end
